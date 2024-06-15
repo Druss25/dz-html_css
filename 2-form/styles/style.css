@@ -148,7 +148,7 @@ label {
     border-bottom-right-radius: 5px;
 }
 
-.block {
+.section__input {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1px;
