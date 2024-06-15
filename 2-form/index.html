@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Регистрация</title>
+    </head>
+    <body>
+        <main>
+            <h1>Регистрация</h1>
+            <span>Уже есть аккаунт?</span>
+            <a href="#">Войти</a>
+            <form action="#">
+                <h2>Моя компания</h2>
+                <div>
+                    <div>
+                        <input type="text" name="firstname" placeholder="Имя" required />
+                    </div>
+                    <div>
+                        <input type="text" name="lastname" placeholder="Фамилия" />
+                    </div>
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="E-mail" required />
+                </div>
+                <button type="submit">
+                    <span>Зарегистрироваться</span>
+                    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M23.0607 13.0607C23.6464 12.4749 23.6464 11.5251 23.0607 10.9393L13.5147 1.3934C12.9289 0.807611 11.9792 0.807611 11.3934 1.3934C10.8076 1.97919 10.8076 2.92893 11.3934 3.51472L19.8787 12L11.3934 20.4853C10.8076 21.0711 10.8076 22.0208 11.3934 22.6066C11.9792 23.1924 12.9289 23.1924 13.5147 22.6066L23.0607 13.0607ZM0 13.5H22V10.5H0V13.5Z"
+                            fill="white"
+                        />
+                    </svg>
+                </button>
+                <div>
+                    <input type="checkbox" name="grant" id="grant" />
+                    <label for="grant">Я прочитал и принимаю</label>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Условия использования</a>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
