@@ -3,15 +3,24 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
         <title>Мой блог</title>
+        <link rel="stylesheet" href="./styles/style.css" />
     </head>
     <body>
-        <header>
-            <a href="/">
-                <span>B</span>
-                <span>Мой блог</span>
+        <header class="container">
+            <a href="#">
+                <div class="logo">
+                    <div class="logo__wrapper">
+                        <span class="logo__char">B</span>
+                    </div>
+                    <p class="logo__title">Мой блог</p>
+                </div>
             </a>
-            <div>
+            <div class="wrapper">
                 <nav>
                     <ul>
                         <li><a href="#">HTML и CSS</a></li>
@@ -24,26 +33,26 @@
                         <img src="./images/search.svg" alt="search" />
                     </div>
                     <div>
-                        <input type="text" />
+                        <input type="text" placeholder="Поиск" />
                     </div>
                 </form>
             </div>
         </header>
-        <main>
-            <div>
-                <span>Fronted</span>
+        <main class="container flex-col">
+            <div class="subtitle">
+                <span>FRONTEND</span>
                 <span></span>
                 <span>12 мая 2024</span>
             </div>
             <article>
-                <h1>Теория цвета - Как цвет влияет на поведение потребителей</h1>
-                <div>
+                <h1 class="title">Теория цвета - Как цвет влияет на поведение потребителей</h1>
+                <div class="user-info">
                     <div>
                         <img src="./images/foto-1.png" alt="Фото автора статьи" />
                     </div>
                     <div>
-                        <p>Наталья Васильева</p>
-                        <p>Разработчик</p>
+                        <p class="user-name">Наталья Васильева</p>
+                        <p class="user-job">Разработчик</p>
                     </div>
                 </div>
                 <div>
@@ -71,8 +80,8 @@
                 </aside>
             </article>
         </main>
-        <footer>
-            <span>Все права защищены &copy; 2024</span>
+        <footer class="container">
+            <p>Все права защищены &copy; 2024</p>
         </footer>
     </body>
 </html>

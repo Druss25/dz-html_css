@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    /* max-width: 1440px; */
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18.75px;
+    background: linear-gradient(180deg, rgb(55, 65, 81), rgb(17, 24, 39) 100%);
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+li:nth-child(2n) {
+    margin-left: 52px;
+    margin-right: 39px;
+}
+
+header {
+    margin-top: 71px;
+    margin-bottom: 73px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* max-width: 1440px; */
+    padding-left: 180px;
+    padding-right: 180px;
+    /* margin: 0 auto; */
+}
+
+.container > a {
+    position: relative;
+    margin-right: 77px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.wrapper > nav > ul {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.logo__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: #4b5563;
+    border-radius: 3px;
+}
+
+.logo__char {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22.63px;
+    padding: 6px 12px;
+}
+
+.logo__title {
+    font-size: 18px;
+    line-height: 21.09px;
+    text-wrap: nowrap;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle {
+    margin-bottom: 14px;
+}
+
+.subtitle span:nth-child(odd) {
+    font-size: 14px;
+    line-height: 16.41px;
+    opacity: 0.6;
+}
+
+.subtitle span:nth-child(2) {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 4px;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 38px;
+    max-width: 525px;
+    margin: 0 auto;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 30px 0;
+}
+.user-name {
+}
+
+.user-job {
+    font-size: 14px;
+    line-height: 28px;
+    opacity: 0.6;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
