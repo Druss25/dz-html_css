@@ -1,0 +1,252 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f39494;
+    background: linear-gradient(#ffa5a5, #ffffff);
+    background: linear-gradient(#fdc5c5, #f298de);
+}
+
+input {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21.79px;
+    background-color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    caret-color: #089fe0;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    height: 44px;
+    padding-left: 11px;
+}
+
+input[type="text"]:focus-visible,
+input[type="email"]:focus-visible {
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #f5f5f5;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: #999;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.79px;
+}
+
+input[type="email"] {
+    border-radius: 5px;
+}
+
+input.validate {
+    background-color: transparent;
+}
+
+a {
+    color: #089fe0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.07px;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 582px;
+    padding: 72px 94px 91px 94px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: #fffefe;
+    border-radius: 10px;
+}
+
+.wrapper__inner-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 47px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #333;
+}
+
+.subtitle {
+    width: 100%;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24.51px;
+    color: #666;
+}
+
+.subtitle__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.51px;
+    margin-left: 6px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+#company {
+    border-radius: 5px;
+}
+
+#firstname {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#lastname {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.block {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1px;
+    /* width: 100%; */
+}
+
+.btn {
+    position: relative;
+    height: 44px;
+    background-color: #089fe0;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.51px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn svg {
+    position: absolute;
+    width: 22px;
+    content: "";
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+}
+
+.footer_form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.footer_form > a {
+    position: relative;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.07px;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+input[type="checkbox"] + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    margin-right: 12px;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 16px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-right: 4px;
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на checkbox */
+input[type="checkbox"]:not(:disabled):not(:checked) + label:hover::before {
+    border-color: #089fe0;
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+input[type="checkbox"]:not(:disabled):active + label::before {
+    background-color: #f5f5f5;
+    border-color: #089fe0;
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+input[type="checkbox"]:focus:not(:checked) + label::before {
+    border-color: #089fe0;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+input[type="checkbox"]:checked + label::before {
+    border-color: #089fe0;
+    background-color: #089fe0;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+input[type="checkbox"]:disabled + label::before {
+    background-color: #f5f5f5;
+}
