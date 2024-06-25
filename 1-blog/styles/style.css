@@ -1,0 +1,265 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body,
+header,
+main,
+footer,
+article {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18.75px;
+    background: linear-gradient(hsla(216, 19%, 27%, 1), hsla(220, 39%, 11%, 1));
+    color: #fff;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.header {
+    padding-top: 71px;
+    padding-bottom: 70px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 1100px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.logo__symbol {
+    position: relative;
+    font: 600 18px / 22.63px "Source Code Pro", monospace;
+    width: 35px;
+    height: 35px;
+    background-color: #4b5563;
+    border-radius: 3px;
+}
+
+.logo__symbol::before {
+    position: absolute;
+    content: "B";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo__title {
+    font-size: 18px;
+    line-height: 21.09px;
+    text-wrap: nowrap;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    margin-left: 78px;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__list-item {
+    list-style: none;
+}
+
+.menu__list-item:nth-child(2n) {
+    margin-left: 52px;
+    margin-right: 39px;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 224px;
+    border-radius: 100px;
+    background-color: rgba(31, 41, 55, 0.6);
+    padding: 0 18px;
+}
+
+.search::before {
+    position: absolute;
+    content: url(../images/search.svg);
+    width: 14px;
+    height: 14px;
+    object-fit: cover;
+}
+
+.search input {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+    background-color: transparent;
+    color: #fff;
+    caret-color: #fff;
+    padding: 10.625px 10px 10.625px 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.search input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subtitle {
+    font-size: 14px;
+    line-height: 16.41px;
+    opacity: 0.6;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+.subtitle span {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 0 8px 4px;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 38px;
+    max-width: 525px;
+    margin-bottom: 28px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    padding-left: 52px;
+    margin-bottom: 30px;
+}
+
+.author__photo {
+    width: 50px;
+    height: 50px;
+}
+
+.author__name {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.author__job {
+    font-size: 14px;
+    line-height: 22px;
+    opacity: 0.6;
+}
+
+.hero__photo {
+    display: flex;
+    justify-content: center;
+    max-width: 896px;
+    max-height: 594px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 68px;
+}
+
+.comment__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 707px;
+    margin: 0 auto;
+}
+
+.comment__info {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+aside p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.footer {
+    padding: 84px 0;
+}
+
+.footer__rights {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.6);
+}
