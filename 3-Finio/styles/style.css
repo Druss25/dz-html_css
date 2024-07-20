@@ -221,6 +221,13 @@ h4 {
 
 /* Header END */
 
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
 /* Hero START */
 .hero {
     position: relative;
@@ -935,14 +942,17 @@ footer {
 .footer__top {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     padding-bottom: 40px;
+    gap: 48px;
 }
 
 .row-group-left,
 .row-group-right {
     display: flex;
-    gap: 124px;
+    flex-wrap: wrap;
+    column-gap: 124px;
 }
 
 .footer__logo .footer__logo-description {
@@ -1007,6 +1017,10 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+    h2 {
+        font-size: 32px;
+    }
+
     .header-wrap {
         border-bottom: 1px solid rgba(255, 255, 255, 0.16);
         padding: 23px 0 19px;
@@ -1036,6 +1050,11 @@ footer {
     .mobile-button {
         display: block;
         transition: transform 0.3s ease;
+    }
+
+    .row-group-left,
+    .row-group-right {
+        row-gap: 40px;
     }
 }
 
@@ -1069,7 +1088,13 @@ footer {
     }
 
     .section-wrapper {
-        justify-content: center;
+        /* justify-content: center; */
+        max-width: 328px;
+        padding: 35px 0 9px;
+    }
+
+    .section__left {
+        flex: 1;
     }
 
     .section__left-content {
@@ -1121,5 +1146,16 @@ footer {
 
     .hero-tr {
         clip-path: polygon(100% 78%, 100% 100%, 0% 100%);
+    }
+
+    .footer {
+        padding: 64px 0;
+    }
+
+    .footer__bottom {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 24px;
     }
 }
